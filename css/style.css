@@ -1,0 +1,56 @@
+/* Main */
+.section-title {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+.section-title span {
+    font-size: 1rem;
+}
+
+
+/* Dotted */
+.dotted{
+    border-bottom: 1px dashed #999;
+    text-decoration: none; 
+}
+
+.gray-background {
+    background-color: #353a40;
+}
+
+.green {
+    background-color: #96c93e !important;
+}
+
+/* Navbar */
+.green-text {
+    color: #2e8b44 !important;
+}
+
+/* footer */
+.background-gradient {
+    background: linear-gradient(to right, #1d3744 , #1e5372)!important;
+}
+
+.nav-link {
+    color: white;
+}
+
+
+/* Image opacity */
+.image {
+    filter: brightness(50%);
+}
+/* Payment */
+.light-blue{
+    background-color: #a3dde7;;
+    }
+
+    /* label */
+    .label{
+        padding-bottom: 5px;
+    }
+
+
