@@ -13,3 +13,9 @@ function  segundo(){
 
 primero(segundo);
 //segundo();
+
+ //  elementos en variables 
+
+ var cantidad = document.getElementById('cantidad')
+
+ var categoria = document.getElementById('categoria')
