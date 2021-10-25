@@ -241,43 +241,52 @@
         <h2>VALOR DE TICKET $200</h2>
       </div>
 
-      <form class="col-lg-6 col-md-12 m-auto px-4">
+      <form class="col-lg-6 col-md-12 m-auto px-4" action="" method="get" autocomplete="off">
         <div class="row mb-3">
           <div class="col">
-            <input type="text" class="form-control"  placeholder="Nombre" aria-label="First name">
+            <input type="text" class="form-control"  id="nombre" placeholder="Nombre" aria-label="First name">
           </div>
           <div class="col">
-            <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+            <input type="text" class="form-control" id="apellido" placeholder="Apellido" aria-label="Last name">
           </div>
         </div>
         <div class="mb-3">
-          <input type="text" class="form-control" id="your-topic" rows="3" placeholder="correo">
+          <input type="text" class="form-control" id="email" rows="3" placeholder="correo">
         </div>
         <div class="row mb-3">
           <div class="col">
-            <label class="label">Cantidad</label>
-            <input type="text" class="form-control" id="cantidad" placeholder="cantidad" aria-label="Cantidad">
+            <label class="label">Cantidad (M&aacuteximo 5 entradas)</label>
+            <!--<input type="number" max="20" class="form-control" id="cantidad" placeholder="cantidad" aria-label="Cantidad">-->
+            <select class="form-control" id="cantidad">
+              <option value = "1">1</option>     
+              <option  value="2">2</option>
+              <option  value="3">3</option>
+              <option   value="4">4</option>
+              <option   value="5">5</option>
+            </select>
+            
           </div>
           <div class="col form-group">
             <label class="label">Categor&iacutea</label>
             <select class="form-control" id="categoria">
-              <option>Estudiante</option>
-              <option>Trainee</option>
-              <option>Junior</option>
+              <option value = "0">Selecciones una opcion </option>     
+              <option  value="1">Estudiante</option>
+              <option  value="2">Trainee</option>
+              <option   value="3">Junior</option>
             </select>
           </div>
         </div>
         <br>
         <div class="mb-3">
-          <input type="text" class="form-control light-blue" id="your-topic" rows="3" placeholder="Total a Pagar: $">
+          <input type="text" class="form-control light-blue" id="importe" rows="3" placeholder="Total a Pagar: $" autocomplete="off">
         </div>
         <br>
         <div class="row mb-3">
           <div class="col">
-            <button type="submit" class="btn text-white green form-control">Borrar</button>
+            <button type="reset" class="btn text-white green form-control" onclick="clear()">Borrar</button>
           </div>
           <div class="col">
-            <button type="submit" class="btn text-white green form-control">Resumen</button>
+            <button type="button" class="btn text-white green form-control" id="resultado">Resumen</button>
           </div>
         </div>
       </form>
@@ -297,6 +306,7 @@
       <a href="#" class="nav-link">Estudiantes</a>
     </nav>
   </footer>
+  <script src="app.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
